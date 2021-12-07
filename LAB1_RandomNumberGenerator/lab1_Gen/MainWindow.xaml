@@ -1,0 +1,35 @@
+﻿<Window x:Class="lab1_Gen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab1_Gen"
+        mc:Ignorable="d"
+        Name="W"
+        Title="MainWindow" Height="325" Width="709">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="91*"/>
+            <ColumnDefinition x:Name="R" Width="309*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="2       -" HorizontalAlignment="Left" Margin="36,25,0,0" VerticalAlignment="Top" Width="61"/>
+        <TextBox Text="31" Name="M" HorizontalAlignment="Right" Margin="0,20,92,0"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="21"  Height="18" PreviewTextInput="NumberValidationTextBox"  />
+        <TextBox Text="16807" Name="A" HorizontalAlignment="Center" Margin="0,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="18" PreviewTextInput="NumberValidationTextBox"/>
+        <TextBox Text="17711"  Name="C" HorizontalAlignment="Center" Margin="0,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" Height="18" PreviewTextInput="NumberValidationTextBox"  />
+        <TextBox Text="31" Name="X" HorizontalAlignment="Center" Margin="0,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="18" PreviewTextInput="NumberValidationTextBox"/>
+        <Label Content="m:" HorizontalAlignment="Left" Margin="9,25,0,0" VerticalAlignment="Top"/>
+        <Label Content="a:" HorizontalAlignment="Left" Margin="9,63,0,0" VerticalAlignment="Top"/>
+        <Label Content="c:" HorizontalAlignment="Left" Margin="9,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="X₀:" HorizontalAlignment="Left" Margin="8,137,0,0" VerticalAlignment="Top"/>
+        <Button Content="Generate" HorizontalAlignment="Left" Margin="47,212,0,0" VerticalAlignment="Top" Width="56" Click="Button_Click"/>
+        <TextBox  Name="Result" Grid.Column="1" HorizontalAlignment="Center" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" VerticalAlignment="Center" Height="280" Width="533"/>
+        <TextBox Text="1000" Name="Count" HorizontalAlignment="Right" Margin="0,179,43,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Height="18" PreviewTextInput="NumberValidationTextBox"/>
+        <Label Content="Count:" HorizontalAlignment="Left" Margin="2,175,0,0" VerticalAlignment="Top"/>
+        <TextBox Text="1" x:Name="N" HorizontalAlignment="Right" Margin="0,29,53,0"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="25"  Height="18" PreviewTextInput="NumberValidationTextBox" />
+        <TextBox Text="" x:Name="U_Count" HorizontalAlignment="Right" Margin="0,243,24,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Height="18" PreviewTextInput="NumberValidationTextBox"/>
+        <Label Content="Unique:" HorizontalAlignment="Left" Margin="8,239,0,0" VerticalAlignment="Top" Width="58"/>
+
+    </Grid>
+</Window>
+
+    
